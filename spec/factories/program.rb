@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :program do
-    title 'IEP'
+    title {'IEP'}
   end
 end
