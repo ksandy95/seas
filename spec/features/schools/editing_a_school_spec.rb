@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'editing a school' do
   let(:new_school_title) { 'Cosmo Canyon' }
   let(:new_school_city) { 'Gongaga' }

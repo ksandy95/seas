@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'editing a student' do
   let(:new_student_first_name) { 'Yuffie' }
   let(:new_student_last_name) { 'Kisaragi' }

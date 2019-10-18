@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'viewing a student' do
   let!(:student) { FactoryBot.create(:student) }
 

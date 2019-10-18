@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Program < ApplicationRecord
   VALID_TITLES = %w[IEP 504].freeze
 

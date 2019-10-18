@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddProgramToStudents < ActiveRecord::Migration[5.1]
   def change
     add_reference :students, :program, foreign_key: true

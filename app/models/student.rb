@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Student < ApplicationRecord
   belongs_to :grade
   belongs_to :program, optional: true
