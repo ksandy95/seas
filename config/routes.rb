@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   root to: 'students#index'
 
-  resources :students, only: [:index]
+  resources :students, only: [:index, :new]
 
   resources :schools do
     resources :students
