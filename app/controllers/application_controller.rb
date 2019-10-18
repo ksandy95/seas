@@ -11,8 +11,7 @@ class ApplicationController < ActionController::Base
     flash[:success] = "#{object.class} was successfully updated."
   end
 
-  def destroy_flash(object)
-    binding.pry
+  def d_flash(object)
     flash[:success] = "#{object.class} was successfully destroyed."
   end
 
