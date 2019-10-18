@@ -3,10 +3,17 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  def generate_flash(resource)
-    resource.errors.messages.each do |validation, message|
-      flash[validation] = "#{validation}: #{message}"
-    end
+  def create_flash(object)
+    flash[:success] = "#{object.class} was successfully created."
+  end
+
+  def update_flash(object)
+    flash[:success] = "#{object.class} was successfully updated."
+  end
+
+  def destroy_flash(object)
+    binding.pry
+    flash[:success] = "#{object.class} was successfully destroyed."
   end
 
 end
