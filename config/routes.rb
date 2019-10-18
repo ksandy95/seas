@@ -3,8 +3,10 @@
 Rails.application.routes.draw do
   root to: 'students#index'
 
-  resources :students
-  resources :schools
+  resources :students, only: [:index]
 
-  # namespace routes example (`/schools/1/students` vs `/students`)
+  resources :schools do
+    resources :students
+  end
+
 end
