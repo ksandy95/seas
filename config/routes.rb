@@ -7,5 +7,4 @@ Rails.application.routes.draw do
     resources :students
   end
 
-  # namespace routes example (`/schools/1/students` vs `/students`)
 end
