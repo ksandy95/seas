@@ -28,7 +28,7 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.save
-        format.html { redirect_to @student, create_flash(@student) }
+        format.html { redirect_to @student, notice: create_flash(@student) }
         format.json { render :show, status: :created, location: @student }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class StudentsController < ApplicationController
   def update
     respond_to do |format|
       if @student.update(student_params)
-        format.html { redirect_to @student, update_flash(@student) }
+        format.html { redirect_to @student, notice: update_flash(@student) }
         format.json { render :show, status: :ok, location: @student }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class StudentsController < ApplicationController
   def destroy
     @student.destroy
     respond_to do |format|
-      format.html { redirect_to request.referrer, destroy_flash(@student)}
+      format.html { redirect_to request.referrer, notice: d_flash(@student) }
       format.json { head :no_content }
     end
   end
