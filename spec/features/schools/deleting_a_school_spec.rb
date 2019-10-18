@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'editing a school' do
   let!(:school) { FactoryBot.create(:school) }
   let(:school_row_selector) { "tr[data-id='#{school.id}']" }

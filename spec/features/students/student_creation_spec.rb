@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'student creation' do
   let(:student_attributes) { FactoryBot.attributes_for(:student) }
   let(:school_attributes) { FactoryBot.attributes_for(:school) }
@@ -5,7 +7,7 @@ describe 'student creation' do
   let(:program_attributes) { FactoryBot.attributes_for(:program) }
   let!(:school) { FactoryBot.create(:school) }
 
-  it "creates the student" do
+  it 'creates the student' do
     visit root_path
 
     click_link 'Students'

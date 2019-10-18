@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe Program do
   subject { FactoryBot.build(:program) }
 

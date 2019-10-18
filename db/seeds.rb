@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 grades = Grade::VALID_TITLES.map do |grade|
   Grade.create!(title: grade)
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'listing schools' do
   let!(:schools) { FactoryBot.create_list(:school, 3) }
 

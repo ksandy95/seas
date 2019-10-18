@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ApplicationHelper
   def top_nav_list_item(type)
     cls = request.path =~ /#{type}/ ? 'active' : ''

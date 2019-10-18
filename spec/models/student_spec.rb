@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe Student do
   subject { FactoryBot.build(:student) }
 

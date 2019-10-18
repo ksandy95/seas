@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 describe 'school creation' do
   let(:school_attributes) { FactoryBot.attributes_for(:school) }
 
-  it "creates the school" do
+  it 'creates the school' do
     visit root_path
 
     click_link 'Schools'

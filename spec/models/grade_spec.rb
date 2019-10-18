@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe Grade do
   subject { FactoryBot.build(:grade) }
 
